@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+.about{
+  font-family: 'Sora', sans-serif;
+}
+.hero {
+  background-image: url("../assets/banner.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;  
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .hero-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    
+    @media (max-width: 549px) {
+        height: 80%;
+    }
+    @media (max-width: 334px) {
+        height: 70%;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 22px;
+      padding-bottom: 4px;
+      margin-left: 16px;
+    }
+
+    h2 {
+      font-size: 50px;
+      margin-left: 16px;
+      @media (min-width: 550px) {
+        font-size: 80px;
+      }
+    }
+
+    hr:nth-child(2) {
+      max-width: 365px;
+      margin-bottom: 16px;
+    }
+    hr:nth-child(4) {
+      height: 6px;
+      background-color: #fff;
+      border: none;
+      max-width: 85px;
+      margin-top: 16px;
+    }
+  }
+}
+.section1 {
+  color: #000000;
+  background-color: #504b4b;
+  box-sizing: border-box;
+
+  .title{
+    text-align: center;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+  }
+  .section1_content{
+    display: flex;
+    text-align: left;
+    .section_text{
+      width: 100%;
+      float: left;
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 24px;
+      margin-left: 20px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 12px;
+      }
+      @media (min-width: 1440px) {//dont forget to add these everywhere (support mobile first)
+        width: 70%;
+      }
+    }
+    .section_images{
+      width: 50%;
+      float: right;
+      margin-right: 10px;
+
+      @media (min-width: 1440px) {//dont forget to add these everywhere (support mobile first)
+        width: 30%;
+      }
+    }
+  }
+}
+.section2{
+  color: #000000;
+  background-color: rgb(208, 207, 101);
+  box-sizing: border-box;
+  .title{
+    text-align: center;
+    color: #000000;
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+  }
+  .title2{
+    text-align: center;
+    color: #000000;
+    font-family: 'Sora', sans-serif;
+    font-size: 26px;
+    @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 12px;
+      }
+  }
+  .section2_content{
+    display: flex;
+    text-align: left;
+    @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+      font-size: 12px;
+    }
+    @media (max-width: 370px)  {
+        .section2_first .polaroid,.section2_third .polaroid {width: 80%; display: none;}
+    }
+    .section2_first{
+      width: 18%;
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      margin-left: 5px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 12px;
+      }
+      div.polaroid {
+        width: 90%;
+        background-color: #0c3927b9;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+
+        video.images{
+          width: 250px;
+          height: 100px;
+        }
+      }
+      div.pol_container {
+        text-align: center;
+        padding: 10px 20px;
+        @media (max-width: 620px) {
+        font-size: 12px;
+        }
+      }
+    }
+    .section2_second{
+      width:30%;
+      float: left;
+      color: #000000;
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 10px;
+      }
+    }
+    .section2_third{
+      width: 18%;
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 12px;
+      }
+      div.polaroid {
+        width: 90%;
+        background-color: #0c3927b9;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+      }
+      div.pol_container {
+        text-align: center;
+        padding: 10px 20px;
+        @media (max-width: 620px) {
+        font-size: 12px;
+        }
+      }
+    }
+    .section2_fourth{
+      width:40%;
+      float: left;
+      color: #000000;
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 10px;
+      }
+    }
+  }
+}
+.section3{
+  color: #000000;
+  background-color: rgb(205, 224, 96);
+  box-sizing: border-box;
+  .title{
+    text-align: center;
+    color: #000000;
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+  }
+  .title2{
+      text-align: center;
+      color: #000000;
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+          font-size: 12px;
+        }
+    }
+  .section3_content{
+    display: flex;
+    text-align: left;
+    .form{
+      width: 65%;
+      float: left;
+      color: #000;
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      margin-left: 10px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 14px;
+      }
+      label{
+        font-weight: 600;
+      }
+      #fullname{
+        width: 80%;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #000000;
+        font-size: 16px;
+        @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 14px;
+        }
+      }
+      #email{
+        width: 80%;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #000000;
+        font-size: 16px;
+        @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 14px;
+        }
+      }
+      #pnumber{
+        width: 80%;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #000000;
+        font-size: 16px;
+        @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 14px;
+        }
+      }
+      #message{
+        width: 80%;
+        min-width: 200px;
+        min-height: 50px;
+        max-height: 80px;
+        max-width: 80%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #000000;
+        font-size: 16px;
+        @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 14px;
+        }
+      }
+      #submit{
+        background-color: #0c3927b9;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        margin: -10px 20px 20px 10px;
+        cursor: pointer;
+        border: 2px solid #000;
+      }
+    }
+    .images{
+      width: 50%;
+      height: 50%;
+      float: right;
+      margin-right: 10px;
+      max-width: 500px;
+      max-height: 400px;
+      img{
+        width: 100%;
+        border-radius: 15px;  
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+.section4{
+  color: #fff;
+  background-color: #0c3927b9;
+  padding-left: 10px;
+  font-size: 16px;
+  .copyright{
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    a{
+      margin: 30px;
+      @media (max-width: 1440px) {//dont forget to add these everywhere (support mobile first)
+          margin: 15px;
+      }
+      @media (max-width: 1024px) {//dont forget to add these everywhere (support mobile first)
+          margin: 10px;
+      }
+      @media (max-width: 768px) {//dont forget to add these everywhere (support mobile first)
+          margin: 2px;
+      }
+    }
+    @media (max-width: 550px) {//dont forget to add these everywhere (support mobile first)
+        display: block;  
+      }
+  }
+  .title{
+    text-align: center;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+    @media (max-width: 770px) {//dont forget to add these everywhere (support mobile first)
+      font-size: 16px;
+    }
+  }
+  .services{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    @media (max-width: 770px) {//dont forget to add these everywhere (support mobile first)
+      font-size: 14px;
+    }
+    @media (max-width: 450px) {//dont forget to add these everywhere (support mobile first)
+      font-size: 10px;
+    }
+    @media (max-width: 370px) {//dont forget to add these everywhere (support mobile first)
+      font-size: 8px;
+    }
+  }
+}
+
+.images{//images found in sections
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  padding: 5px;
+}
+

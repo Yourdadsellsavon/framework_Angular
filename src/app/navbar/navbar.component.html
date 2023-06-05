@@ -1,0 +1,26 @@
+<header :class="{'scrolled-nav': scrolledNav}">
+    <nav>
+        <div class="branding">
+            <img src="./app/assets/logo.png" alt="logo of the company"/>
+        </div>
+        <ul v-show="!mobile" class="navigation">
+            <li><a routerLink="" class="link">Home</a> </li>
+            <li><a routerLink="about" class="link">About</a> </li>
+            <li><a routerLink="media" class="link">Media</a> </li>
+            <div class="linked-in-link"><li><i><a href="http://www.linkedin.com/" class="link">LinkedIn <i class='fas fa-external-link-square'></i></a></i> </li></div>
+        </ul>
+        <div class="icon">
+            <!-- <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{'icon-active' : mobileNav}"></i> -->
+        </div>
+        <!-- <transition name="mobile-nav">
+            <ul v-show="mobileNav" class="dropdown-nav">
+                    <li><br><a href="#/home" class="link">Home</a> </li>
+                    <li><a href="#/about" class="link">About</a> </li>
+                    <li><a href="#/media" class="link">Media</a> </li>
+                    <li><i><a href="http://www.linkedin.com/" class="linked-in-link-mobile">LinkedIn <i class='fas fa-external-link-square'></i></a></i> </li>
+            </ul>
+        </transition> -->
+    </nav>
+</header>
+
+<router-outlet></router-outlet>

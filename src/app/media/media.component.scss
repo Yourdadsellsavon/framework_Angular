@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+  
+  .media{
+    font-family: 'Sora', sans-serif;
+    background-color: rgb(208, 207, 101);
+  }
+  .hero {
+    background-image: url("../assets/b3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;  
+  
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .hero-text {
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      margin-left: 20px;
+
+      @media (min-width: 990px) {
+          height: 100%;
+        }
+
+      .hello{
+        color: #000;
+
+        @media (max-width: 990px) {
+          color: #fff;
+        }
+      }
+  
+      h4 {
+        text-transform: uppercase;
+        font-size: 22px;
+        padding-bottom: 4px;
+        margin-left: 16px;
+        font-weight: 600;
+      }
+  
+      h2 {
+        font-size: 50px;
+        margin-left: 16px;
+        @media (max-width: 334px) {
+          font-size: 40px;
+        }
+        @media (min-width: 550px) {
+          font-size: 60px;
+        }
+        @media (min-width: 769px) {
+          font-size: 70px;
+        }
+        @media (min-width: 900px) {
+          font-size: 80px;
+        }
+      }
+  
+      hr:nth-child(2) {
+        max-width: 365px;
+        margin-bottom: 16px;
+      }
+      hr:nth-child(4) {
+        height: 6px;
+        background-color: #fff;
+        border: none;
+        max-width: 85px;
+        margin-top: 16px;
+      }
+    }
+  }
+  .section1 {
+    color: #000000;
+    background-color: #0c3927b9;
+    box-sizing: border-box;
+  
+    .title{
+      text-align: center;
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 32px;
+    }
+
+    .title2{
+      text-align: center;
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 26px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+          font-size: 12px;
+        }
+    }
+    .title3{
+      text-align: left;
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+          font-size: 12px;
+        }
+    }
+    .spotify{
+      justify-self: center;
+      border-radius:12px;
+      height: 152px;
+      width: 95%;
+      margin-left: 15px;
+    }
+    .section1_content{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      box-sizing: border-box;
+
+      div.polaroid {
+          width: 90%;
+          background-color: #d4af37c3;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          margin-bottom: 25px;
+
+          .images{
+            max-width: 95%;
+          }
+        }
+        div.pol_container {
+          text-align: center;
+          padding: 10px 20px;
+          color: #fff;
+          @media (max-width: 620px) {
+          font-size: 12px;
+          }
+        }
+      .section1_first{
+        width: 100%;
+        float: left;
+        color: #fff;
+        font-family: 'Sora', sans-serif;
+        font-size: 24px;
+        margin-left: 20px;
+        text-align: left;
+        @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+          font-size: 12px;
+        }
+        @media (min-width: 1440px) {//dont forget to add these everywhere (support mobile first)
+          width: 70%;
+        }
+      }
+      .section1_second{
+        width: 60%;
+      }
+    }
+  }
+  .section2{
+    color: #000000;
+    background-color: rgb(208, 207, 101);
+    box-sizing: border-box;
+    .title{
+      text-align: center;
+      color: #000000;
+      font-family: 'Sora', sans-serif;
+      font-size: 32px;
+    }
+    .title2{
+      text-align: left;
+      color: #000000;
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+          font-size: 12px;
+        }
+    }
+    .title3{
+      text-align: center;
+      color: #000000;
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+          font-size: 12px;
+        }
+    }
+    .button_about{
+      background-color: #0c3927;
+      border-radius: 5px;
+      color: white;
+      padding: 16px 32px;
+      font-size: 16px;
+      font-weight: 600;
+      margin: 40px 2px 20px 10px;
+      cursor: pointer;
+      border: 2px solid #000;
+
+      @media (max-width: 768px) {//dont forget to add these everywhere (support mobile first)
+          font-size: 12px;
+          width: 80%;
+          height: 40%;
+          padding: 16px 16px;
+      }
+      @media (max-width: 580px) {//dont forget to add these everywhere (support mobile first)
+          padding: 0px;
+      }
+
+      @media (min-width: 1024px) {//dont forget to add these everywhere (support mobile first)
+        margin-top: 60px;
+      }
+    }
+    .section2_content{
+      display: flex;
+      text-align: left;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 12px;
+      }
+    }
+  }
+  .section3{
+    color: #000000;
+    background-color: rgb(205, 224, 96);
+    box-sizing: border-box;
+    min-height: 350px;
+
+    @media (min-width: 769px) {//dont forget to add these everywhere (support mobile first)
+          height: 450px;
+      }
+    .title{
+      text-align: center;
+      color: #000000;
+      font-family: 'Sora', sans-serif;
+      font-size: 32px;
+    }
+    .title2{
+      text-align: center;
+      color: #000000;
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      @media (max-width: 620px) {//dont forget to add these everywhere (support mobile first)
+          font-size: 12px;
+      }
+    }
+    .section3_content{
+      display: flex;
+      text-align: left;
+      .responsive_iframe{
+        width: 100%;
+        position: absolute;
+        left: 10px;
+        height: 300px;
+        border: 2px solid #0c3927;
+        @media (max-width: 768px) {//dont forget to add these everywhere (support mobile first)
+          width: 90%;
+          height: 220px;
+          margin-left: 20px;
+        }
+        @media (max-width: 445px) {//dont forget to add these everywhere (support mobile first)
+          width: 90%;
+          height: 200px;
+          margin-left: 10px;
+        }
+      }
+      .responsive_iframe2{
+        width: 100%;
+        height: 300px;
+        border: 2px solid #0c3927;
+        position: absolute;
+        right: 10px;
+        @media (max-width: 768px) {//dont forget to add these everywhere (support mobile first)
+          width: 90%;
+          height: 220px;
+          margin-left: 20px;
+        }
+        @media (max-width: 445px) {//dont forget to add these everywhere (support mobile first)
+          width: 90%;
+          height: 200px;
+          margin-left: 10px;
+        }
+      }
+      .section3_first{
+        width:50%;
+        position: absolute;
+        left: 0;
+        float: left;
+        color: #000000;
+        font-family: 'Sora', sans-serif;
+        font-size: 20px;
+      }
+      .section3_second{
+        width:50%;
+        position: absolute;
+        right: 0;
+        float: right;
+        color: #000000;
+        font-family: 'Sora', sans-serif;
+        font-size: 20px;
+      }
+
+    }
+  }
+  
+  .section4{
+    color: #fff;
+    background-color: #0c3927b9;
+    padding-left: 10px;
+    font-size: 16px;
+    .copyright{
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    .links{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      a{
+        margin: 30px;
+        @media (max-width: 1440px) {//dont forget to add these everywhere (support mobile first)
+            margin: 15px;
+        }
+        @media (max-width: 1024px) {//dont forget to add these everywhere (support mobile first)
+            margin: 10px;
+        }
+        @media (max-width: 768px) {//dont forget to add these everywhere (support mobile first)
+            margin: 2px;
+        }
+      }
+      @media (max-width: 550px) {//dont forget to add these everywhere (support mobile first)
+          display: block;  
+        }
+    }
+    .title{
+      text-align: center;
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 32px;
+      @media (max-width: 770px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 16px;
+      }
+    }
+    .services{
+      display: flex;
+      justify-content: center;
+      font-size: 16px;
+      @media (max-width: 770px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 14px;
+      }
+      @media (max-width: 450px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 10px;
+      }
+      @media (max-width: 370px) {//dont forget to add these everywhere (support mobile first)
+        font-size: 8px;
+      }
+    }
+  }
+  
+  .images{//images found in sections
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    padding: 5px;
+  }
+  
+  .carousel-wrapper {
+    width: 80%;
+    height: 275px;
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid #0c3927;
+  
+    @media (min-width: 1024px) {
+      width: 40%;
+    //   height: 380px;
+    }
+    @media (max-width: 1024px) {
+      width: 50%;
+    //   height: 400px;
+    }
+    @media (max-width: 870px) {
+      width: 60%;
+    //   height: 400px;
+    }
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  app-image-slider {
+    height: 500px;
+  }
